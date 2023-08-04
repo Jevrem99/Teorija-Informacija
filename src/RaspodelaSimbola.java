@@ -14,6 +14,18 @@ public class RaspodelaSimbola {
         this.text = text;
     }
 
+    public LinkedList<String> getkTorke() {
+        return kTorke;
+    }
+
+    public LinkedList<Integer> getBrojPojavljivanja() {
+        return brojPojavljivanja;
+    }
+
+    public LinkedList<Double> getVerovatnoce() {
+        return verovatnoce;
+    }
+
     public void izbrojiKTorke()
     {
         kTorke = new LinkedList<>();

@@ -2,10 +2,11 @@ import java.io.*;
 
 public class Main {
 
-    public static void main(String []args) throws IOException
-    {
+    public static void main(String []args) throws IOException {
         String ulazniFajlPutanja;
         String izlazniFajlPutanja;
+        String hufmanKodiranTekst;
+        String hufmanDekodiranTekst;
         int k;
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -19,7 +20,7 @@ public class Main {
         ulazniFajlPutanja = reader.readLine();
         System.out.print("\nUneti putanju izlaznog fajl: ");
         izlazniFajlPutanja = reader.readLine();
-        System.out.print("\nUneti duzinu k-torke za analizu (k\u2208N): ");
+        System.out.print("\nUneti duzinu k-torke za analizu (k∈N): ");
         k = Integer.parseInt(reader.readLine());
 
         Pretproces p = new Pretproces(ulazniFajlPutanja,izlazniFajlPutanja);
@@ -27,6 +28,12 @@ public class Main {
         raspodelaSimbola.izbrojiKTorke();
         raspodelaSimbola.odrediVerovatnoceIEntropije();
         raspodelaSimbola.ispisi();
-    }
 
+        HuffmanovAlgoritam algoritam = new HuffmanovAlgoritam();
+        algoritam.napraviStablo(raspodelaSimbola.getkTorke(), raspodelaSimbola.getBrojPojavljivanja());
+        hufmanKodiranTekst = algoritam.kodirajText(p.getUlazniTekst(),raspodelaSimbola.getkTorke(),raspodelaSimbola.getBrojPojavljivanja());
+        System.out.println(hufmanKodiranTekst);
+        hufmanDekodiranTekst = algoritam.dekodirajTekst(hufmanKodiranTekst);
+        System.out.println(hufmanDekodiranTekst);
+    }
 }

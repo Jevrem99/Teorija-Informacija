@@ -7,7 +7,11 @@ public class Pretproces {
     private String ulazniTekst;
     private String izlazniTekst;
 
-    public Pretproces(String putanjaUlaz,String putanjaIzlaz) {
+    public String getUlazniTekst() {
+        return ulazniTekst;
+    }
+
+    public Pretproces(String putanjaUlaz, String putanjaIzlaz) {
         this.putanjaUlaz = putanjaUlaz;
         this.putanjaIzlaz = putanjaIzlaz;
     }

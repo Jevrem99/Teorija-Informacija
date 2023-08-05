@@ -8,6 +8,7 @@ public class Cvor implements Comparable<Cvor>{
     String simbol;
     Cvor levi;
     Cvor desni;
+    Cvor roditelj;
     String kod = "";
 
 
@@ -37,7 +38,7 @@ public class Cvor implements Comparable<Cvor>{
     }
 
 
-    @Override
+    @Override  //Potrebno zbog offer u PriorityQueue
     public int compareTo(Cvor o) {
         if(this.brojPojavljivanja > o.brojPojavljivanja)
             return 1;
@@ -46,32 +47,5 @@ public class Cvor implements Comparable<Cvor>{
         return 0;
     }
 
-    public void napraviStablo(LinkedList<String> kTorke, LinkedList<Integer> brojPojavljivanja)
-    {
-        Cvor[] cvorovi = new Cvor[kTorke.size()];
 
-        for (int i = 0; i < kTorke.size(); i++) {
-            cvorovi[i] = new Cvor(brojPojavljivanja.get(i), kTorke.get(i));
-            cvorovi[i].kod = "";
-        }
-
-        PriorityQueue<Cvor> red = new PriorityQueue<>();
-
-        for(Cvor cvor: cvorovi){
-            red.offer(cvor);
-        }
-
-        while(red.size() > 1)
-        {
-            Cvor levi = red.poll();
-            Cvor desni = red.poll();
-
-            int zbirPojavljivanja = levi.brojPojavljivanja + desni.brojPojavljivanja;
-            Cvor noviCvor = new Cvor(zbirPojavljivanja,levi,desni);
-
-            red.offer(noviCvor);
-        }
-
-        red.poll();
-    }
 }

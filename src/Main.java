@@ -29,11 +29,12 @@ public class Main {
         raspodelaSimbola.odrediVerovatnoceIEntropije();
         raspodelaSimbola.ispisi();
 
-        HuffmanovAlgoritam algoritam = new HuffmanovAlgoritam();
-        algoritam.napraviStablo(raspodelaSimbola.getkTorke(), raspodelaSimbola.getBrojPojavljivanja());
+        HuffmanovAlgoritam algoritam = new HuffmanovAlgoritam(raspodelaSimbola.getkTorke(), raspodelaSimbola.getBrojPojavljivanja());
+        System.out.println(algoritam.kodiraj(p.getIzlazniTekst(), k));
+        /*algoritam.napraviStablo(raspodelaSimbola.getkTorke(), raspodelaSimbola.getBrojPojavljivanja());
         hufmanKodiranTekst = algoritam.kodirajText(p.getUlazniTekst(),raspodelaSimbola.getkTorke(),raspodelaSimbola.getBrojPojavljivanja());
         System.out.println(hufmanKodiranTekst);
         hufmanDekodiranTekst = algoritam.dekodirajTekst(hufmanKodiranTekst);
-        System.out.println(hufmanDekodiranTekst);
+        System.out.println(hufmanDekodiranTekst);*/
     }
 }

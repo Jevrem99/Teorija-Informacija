@@ -26,27 +26,28 @@ public class RaspodelaSimbola {
         return verovatnoce;
     }
 
-    public void izbrojiKTorke()
-    {
+    public void izbrojiKTorke() {
         kTorke = new LinkedList<>();
         brojPojavljivanja = new LinkedList<>();
         String kTorka;
         int index;
+        System.out.println("Velicina teksta: " + text.length());
 
-        for(int i = 0;i < text.length() - k;i++)
-        {
+        for (int i = 0; i < text.length() - k; i++) {
+            kTorka = text.substring(i, i + k);
 
-            kTorka = text.substring(i,i+k);
-
-            if((index = kTorke.indexOf(kTorka)) != -1) //K-torka postoji u listi
+            if ((index = kTorke.indexOf(kTorka)) != -1) //K-torka postoji u listi
             {
-                brojPojavljivanja.set(index,brojPojavljivanja.get(index)+1);
-            }
-            else //Nadjena nova kTorka
+                brojPojavljivanja.set(index, brojPojavljivanja.get(index) + 1);
+            } else //Nadjena nova kTorka
             {
                 kTorke.add(kTorka);
                 brojPojavljivanja.add(1);
             }
+        }
+        if (text.length() % k != 0) {
+            kTorke.add(text.substring(text.length() - (text.length() % k), text.length())); //Dodavanje poslednje kTorke ako nije obuhvacena
+            brojPojavljivanja.add(1);
         }
     }
 

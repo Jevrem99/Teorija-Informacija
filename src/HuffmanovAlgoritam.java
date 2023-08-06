@@ -22,16 +22,28 @@ public class HuffmanovAlgoritam {
         String kodiranTekst = "";
         napraviStablo();
         Stack<Cvor> stack = new Stack<>();
+        String kTorka;
+        StringBuilder putanja;
+        Cvor trazen;
 
-        for (int i = 0; i < text.length() - k + 1; i += k) {
-            String kTorka = text.substring(i, i + k);
-            Cvor trazen = nadjiCvor(kTorka);
-            StringBuilder putanja = new StringBuilder(nadjiPutanju(trazen));
+        //Neelegantno resenje
+        for (int i = 0; i < text.length() - k+1; i += k) {
+            kTorka = text.substring(i, i + k);
+            trazen = nadjiCvor(kTorka);
+            putanja = new StringBuilder(nadjiPutanju(trazen));
             putanja.reverse();
             System.out.println(kTorka + ":" + putanja);
             kodiranTekst += putanja;
         }
 
+        if (text.length() % k != 0) {
+            kTorka =  text.substring(text.length() - (text.length() % k), text.length()); //Dodavanje poslednje kTorke ako nije obuhvacena
+            trazen = nadjiCvor(kTorka);
+            putanja = new StringBuilder(nadjiPutanju(trazen));
+            putanja.reverse();
+            System.out.println(kTorka + ":" + putanja);
+            kodiranTekst += putanja;
+        }
 
         return kodiranTekst;
     }

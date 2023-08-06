@@ -32,7 +32,7 @@ public class Main {
         HuffmanovAlgoritam algoritam = new HuffmanovAlgoritam(raspodelaSimbola.getkTorke(), raspodelaSimbola.getBrojPojavljivanja());
         hufmanKodiranTekst = algoritam.kodiraj(p.getIzlazniTekst(),k);
         System.out.println(hufmanKodiranTekst);
-        hufmanDekodiranTekst = algoritam.dekodiraj("010");
+        hufmanDekodiranTekst = algoritam.dekodiraj(hufmanKodiranTekst);
         System.out.println(hufmanDekodiranTekst);
     }
 }

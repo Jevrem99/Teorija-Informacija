@@ -2,21 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec75a8a-0d93-4033-8259-f694117e3bc3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LZ77Algoritam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/HuffmanovAlgoritam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/HuffmanovAlgoritam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/Pretproces.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/Pretproces.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/RaspodelaSimbola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/RaspodelaSimbola.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HuffmanovAlgoritam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HuffmanovAlgoritam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RaspodelaSimbola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RaspodelaSimbola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pretproces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pretproces.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -55,5 +72,32 @@
       <updated>1691354157212</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LZ77Algoritam.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LZ77Algoritam.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

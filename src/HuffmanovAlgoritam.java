@@ -130,7 +130,6 @@ public class HuffmanovAlgoritam {
         while (red.size() > 1) {
             Cvor levi = red.poll();
             Cvor desni = red.poll();
-            System.out.println("Izbaceno: " + levi.brojPojavljivanja + " " + desni.brojPojavljivanja);
             int zbirPojavljivanja = levi.brojPojavljivanja + desni.brojPojavljivanja;
             Cvor noviCvor = new Cvor(zbirPojavljivanja, levi, desni);
             levi.roditelj = noviCvor;

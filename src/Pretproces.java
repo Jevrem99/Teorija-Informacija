@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.Locale;
 
 public class Pretproces {
 
@@ -64,12 +65,13 @@ public class Pretproces {
         {
             if(daLiJeSlovo(ulazniTekst.charAt(i)))
             {
-                izlazniTekst+= ulazniTekst.charAt(i);
+                izlazniTekst+= (ulazniTekst.charAt(i));
             }
         }
+        izlazniTekst = izlazniTekst.toLowerCase();
         ispisiText();
 
-        return izlazniTekst;
+        return izlazniTekst.toLowerCase();
     }
 
     public boolean daLiJeSlovo(char c)

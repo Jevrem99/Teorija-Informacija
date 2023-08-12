@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ec75a8a-0d93-4033-8259-f694117e3bc3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LZ77Algoritam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LZWAlgoritam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/HuffmanovAlgoritam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/HuffmanovAlgoritam.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/Pretproces.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/Pretproces.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Teorija-Informacija/RaspodelaSimbola.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Teorija-Informacija/RaspodelaSimbola.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HuffmanovAlgoritam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HuffmanovAlgoritam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pretproces.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pretproces.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,12 +87,12 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LZ77Algoritam.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((HashMap)recnikDekodiranje).entrySet().toArray()[200]" custom="java.util.HashMap" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

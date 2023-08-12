@@ -37,9 +37,13 @@ public class Main {
         hufmanDekodiranTekst = algoritam.dekodiraj(hufmanKodiranTekst);
         System.out.println(hufmanDekodiranTekst);
 
-        LZ77Algoritam al = new LZ77Algoritam(hufmanKodiranTekst);
-        al.kompresujLZ77(15,9);
-        al.ispisi();
-        al.dekompresujLZ77();
+        LZ77Algoritam lz77 = new LZ77Algoritam(hufmanKodiranTekst);
+        lz77.kompresujLZ77(15,9);
+        lz77.ispisi();
+        lz77.dekompresujLZ77();
+        String lzwKodiranTekst;
+        LZWAlgoritam lzw = new LZWAlgoritam();
+        lzwKodiranTekst = lzw.enkodiraj(p.getIzlazniTekst());
+        lzw.dekodiraj(lzwKodiranTekst);
     }
 }
